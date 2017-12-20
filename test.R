@@ -2,8 +2,8 @@
 library(caTools)             # external package providing write.gif function
 jet.colors <- colorRampPalette(c("#00007F", "blue", "#007FFF", "cyan", "#7FFF7F",
                                  "yellow", "#FF7F00", "red", "#7F0000"))
-dx <- 400                    # define width
-dy <- 400                    # define height
+dx <- 1920                    # define width
+dy <- 1080                   # define height
 C  <- complex(real = rep(seq(-2.2, 1.0, length.out = dx), each = dy),
               imag = rep(seq(-1.2, 1.2, length.out = dy), dx))
 C <- matrix(C, dy, dx)       # reshape as square matrix of complex numbers
